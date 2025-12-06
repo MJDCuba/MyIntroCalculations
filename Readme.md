@@ -39,29 +39,32 @@ vignette("MyIntroCalculations-demo")
 
 # Functions Included:
 
--Category------------Functions
+-Category---------------Functions
 
--Arithmetic----------add_num(), sub_num(), mult_num(), div_num()
+-Arithmetic-------------add_num(), sub_num(), mult_num(), div_num()
 
--Summary statistics-calc_av(), sqr_num()
+-Summary statistics----calc_av(), sqr_num()
 
--Geometry-----------dist_2d()
+-Geometry--------------dist_2d()
 
--Percent change-----perc_chg()
+-Percent change--------perc_chg()
 
--Weighted mean------wei_mn_calc()
+-Weighted mean---------wei_mn_calc()
 
--Finance------------simp_int(), cpond_int()
+-Finance---------------simp_int(), cpond_int()
 
--Algebra------------solv_lin()
+-Algebra---------------solv_lin()
 
 # Defensive Programming
 
 Many functions include checks such as:
 
 -Ensuring inputs are numeric
+
 -Ensuring vectors have matching lengths when required
+
 -Preventing division by zero
+
 -Warning when values fall outside expected conditions
 
 # DESCRIPTION Metadata Summary
@@ -105,8 +108,11 @@ vignettes/MyIntroCalculations-demo.Rmd
 It shows:
 
 -Examples of key functions
+
 -Math expressions using LaTeX
+
 -Explanations of the formulas used
+
 -Reflections on the reproducible workflow (Module 12 requirement)
 
 1. Overall introduction of the package
@@ -133,5 +139,7 @@ The focus is on clear behavior, defensive programming, and introductory math con
 Created as part of an R programming course project covering:
 
 -Package structure and metadata (Module 10)
+
 -Debugging and defensive programming (Module 11)
+
 -R Markdown and reproducible documents (Module 12)
