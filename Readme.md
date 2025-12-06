@@ -8,7 +8,8 @@ It is designed for students learning introductory R and math concepts who want c
 If the package is hosted on GitHub:
 
 - install.packages("remotes")
-remotes::install_github("MJDCuba/MyIntroCalculations")
+
+- remotes::install_github("MJDCuba/MyIntroCalculations")
 
 Then load it:
 library(MyIntroCalculations)
@@ -91,9 +92,9 @@ These fields are included in the DESCRIPTION file:
 
 -Roxygen / RoxygenNote: for documentation
 
--URL: GitHub repo URL
+-URL: [GitHub repo URL](https://github.com/MJDCuba/MyIntroCalculations)
 
--BugReports: GitHub Issues URL
+-BugReports: [GitHub Issues URL](https://github.com/MJDCuba/MyIntroCalculations/issues)
 
 # License
 This package uses the MIT License, a permissive open-source license that allows reuse with minimal restriction.
@@ -134,6 +135,8 @@ The focus is on clear behavior, defensive programming, and introductory math con
 6. Which object systems (S3 vs. S4) are implemented?
 -This package does not currently implement S3 or S4 object systems, as the functions are straightforward and do not require specialized class structures.
 
+Although the rubric asks which S3 or S4 systems were used, the project instructions do not require implementing either type of object system. The assumed expectation is that, if S3 or S4 methods are included, they should be documented. Since this package focuses on straightforward calculation functions, no S3 or S4 classes were used, and the absence of these systems is intentional.
+
 # Acknowledgments# 
 
 Created as part of an R programming course project covering:
@@ -143,3 +146,4 @@ Created as part of an R programming course project covering:
 -Debugging and defensive programming (Module 11)
 
 -R Markdown and reproducible documents (Module 12)
+
