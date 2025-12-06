@@ -37,7 +37,7 @@ A full demonstration of the package is available in the included vignette:
 
 vignette("MyIntroCalculations-demo")
 
-Functions Included:
+# Functions Included:
 
 -Category------------Functions
 
@@ -69,16 +69,27 @@ Many functions include checks such as:
 These fields are included in the DESCRIPTION file:
 
 -Package: MyIntroCalculations
+
 -Title: Introductory Calculation Helpers for Everyday Math and Simple Algebra
+
 -Version: 0.0.0.9000
+
 -Authors@R: author/creator listed
+
 -Description: one-paragraph overview
+
 -Depends: R (>= 3.6.0)
+
 -Imports: (none) — uses only base R
+
 -License: MIT + file LICENSE
+
 -Encoding: UTF-8
+
 -Roxygen / RoxygenNote: for documentation
+
 -URL: GitHub repo URL
+
 -BugReports: GitHub Issues URL
 
 # License
