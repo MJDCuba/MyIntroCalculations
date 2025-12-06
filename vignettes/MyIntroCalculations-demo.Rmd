@@ -1,0 +1,162 @@
+---
+title: "MyIntroCalculations-demo"
+author: "Max De Cuba"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{MyIntroCalculations-demo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Introduction
+
+This document gives a short overview of the MyIntroCalculations package and demonstrates a few of its functions. The package collects small helper functions for everyday calculations such as basic arithmetic, averages, distances, percentages, interest, and simple algebra.
+
+Using an R package for these calculations makes it easier to reuse code across projects and keep the logic in one place. It also supports reproducible work, since the same functions can be called consistently from different scripts or reports.
+
+Loading the Package
+```{r load package}
+# If the package is not yet installed from GitHub, you would use:
+# remotes::install_github("MJDCuba/MyIntroCalculations")
+
+library(MyIntroCalculations)
+```
+
+Basic Arithmetic and Averages
+
+The package includes basic arithmetic helpers such as add_num(), sub_num(), mult_num(), and div_num(), along with a simple average helper calc_av().
+
+```{r simple calculation}
+# Add, subtract, multiply, and divide
+
+add_num(3, 5)
+sub_num(10, 4)
+mult_result <- mult_num(6, 7)
+div_result <- div_num(20, 4)
+
+mult_result
+div_result
+```
+
+```{r average calculaton}
+# Compute the average of a numeric vector
+
+values <- c(10, 20, 30, 40)
+avg <- calc_av(values)
+avg
+```
+
+The calc_av() function includes input checks so that it will return a clear error if a non-numeric vector is supplied or if the vector is empty. This reflects a basic defensive programming approach.
+
+Distances and Squares
+
+The package also has a small helper for squaring numbers and a function for computing distances in two dimensions.
+
+```{r square calculation}
+# Square a number
+
+sqr_num(7)
+
+# Distance between (0, 0) and (3, 4)
+
+dist_2d(x1 = 0, x2 = 3, y1 = 0, y2 = 4)
+```
+
+The distance calculation uses the familiar Euclidean distance formula
+
+$$
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.
+$$
+
+Percent Change and Weighted Means
+
+The percent change helper perc_chg() implements the formula
+
+$$
+\text{Percent Change} = \frac{\text{new} - \text{old}}{\text{old}} \times 100.
+$$
+
+```{r percent change}
+old_values <- c(100, 80, 50)
+new_values <- c(120, 60, 55)
+
+perc_chg(old_values, new_values)
+```
+
+The function checks that:
+-both old and new are numeric,
+-they have the same length, and
+-none of the old values are zero (to avoid dividing by zero).
+
+There is also a weighted mean helper 'wei_mn_calc()':
+
+```{r weighted mean}
+scores <- c(70, 80, 90)
+weights <- c(1, 2, 3)
+
+wei_mn_calc(scores, weights)
+```
+
+This function checks the types, the lengths, and warns if any weights are negative.
+
+Simple and Compound Interest
+
+Two functions support simple and compound interest calculations. The simple interest function is based on
+
+$$
+I = P \cdot r \cdot t.
+$$
+
+where:
+P is the principal, r is the annual rate (as a decimal), and t is the time in years.
+
+```{r principle calculation}
+
+simp_int(principal = 1000, rate = 0.05, time = 3)
+
+```
+
+The compound interest function uses the standard formula
+
+$$
+A = P \left(1 + \frac{r}{n}\right)^{nt}.
+$$
+
+where 'P' is principal, 'r' is annual rate, 'n' is the number of compounding periods per year, and 't' is time in years.
+
+```{r compound calculation}
+
+cpond_int(principal = 1000, rate = 0.05, n = 4, time = 3)
+
+```
+
+Both functions include basic checks on their arguments. For example, the compound interest function ensures that the compounding frequency n is positive and that all inputs are numeric.
+
+Solving a Simple Linear Equation
+
+The function solv_lin() solves a simple one-variable linear equation of the form
+
+$$
+ax + b = 0.
+$$
+
+for x, assuming a≠0. Algebraically, the solution is:
+
+$$
+x = -\frac{b}{a}.
+$$
+
+```{r linear solution}
+
+solv_lin(a = 2, b = -4) # expects x = 2
+
+```
+
+This function checks that a and b are numeric scalars and returns a clear error if a is zero, since there would be no unique solution.

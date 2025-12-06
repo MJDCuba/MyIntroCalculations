@@ -1,0 +1,24 @@
+Package: MyIntroCalculations
+Title: Introductory Calculation Helpers for Everyday Math and Simple Algebra
+Version: 0.0.0.9000
+Authors@R: 
+    person("Max", "De Cuba", email = "mjdecuba@usf.edu",
+           role = c("aut", "cre"))
+Description: 
+    A small collection of functions for basic arithmetic, averages,
+    distances, percentages, weighted means, simple interest, compound
+    interest, and solving one-variable linear equations. The examples
+    are aimed at students in introductory R and math courses who want
+    clear, defensively-programmed calculation helpers.
+Depends: R (>= 3.6.0)
+LazyData: true
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/MJDCuba/MyIntroCalculations
+BugReports: https://github.com/MJDCuba/MyIntroCalculations/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
