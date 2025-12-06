@@ -16,6 +16,7 @@ library(MyIntroCalculations)
 # Overview
 
 MyIntroCalculations contains a collection of functions that simplify common numeric tasks such as:
+
 -Adding, subtracting, multiplying, and dividing numbers
 -Calculating averages and squares
 -Computing Euclidean distances
@@ -31,6 +32,7 @@ A full demonstration of the package is available in the included vignette:
 vignette("MyIntroCalculations-demo")
 
 Functions Included:
+
 Category	          Functions
 Arithmetic	        add_num(), sub_num(), mult_num(), div_num()
 Summary statistics	calc_av(), sqr_num()
@@ -43,6 +45,7 @@ Algebra	            solv_lin()
 Defensive Programming
 
 Many functions include checks such as:
+
 -Ensuring inputs are numeric
 -Ensuring vectors have matching lengths when required
 -Preventing division by zero
@@ -51,6 +54,7 @@ Many functions include checks such as:
 # DESCRIPTION Metadata Summary
 
 These fields are included in the DESCRIPTION file:
+
 -Package: MyIntroCalculations
 -Title: Introductory Calculation Helpers for Everyday Math and Simple Algebra
 -Version: 0.0.0.9000
@@ -75,6 +79,7 @@ A demonstration vignette is included:
 vignettes/MyIntroCalculations-demo.Rmd
 
 It shows:
+
 -Examples of key functions
 -Math expressions using LaTeX
 -Explanations of the formulas used
@@ -102,6 +107,7 @@ The focus is on clear behavior, defensive programming, and introductory math con
 # Acknowledgments# 
 
 Created as part of an R programming course project covering:
+
 -Package structure and metadata (Module 10)
 -Debugging and defensive programming (Module 11)
 -R Markdown and reproducible documents (Module 12)
