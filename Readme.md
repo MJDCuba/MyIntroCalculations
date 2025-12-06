@@ -18,11 +18,17 @@ library(MyIntroCalculations)
 MyIntroCalculations contains a collection of functions that simplify common numeric tasks such as:
 
 -Adding, subtracting, multiplying, and dividing numbers
+
 -Calculating averages and squares
+
 -Computing Euclidean distances
+
 -Percent change calculations
+
 -Weighted means
+
 -Simple and compound interest
+
 -Solving one-variable linear equations
 
 All functions include basic input validation (numeric checks, length checks, division-by-zero checks) to help prevent common errors and make messages more informative.
