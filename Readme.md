@@ -92,9 +92,9 @@ These fields are included in the DESCRIPTION file:
 
 -Roxygen / RoxygenNote: for documentation
 
--URL: [GitHub repo URL](https://github.com/MJDCuba/MyIntroCalculations)
+-URL: https://github.com/MJDCuba/MyIntroCalculations
 
--BugReports: [GitHub Issues URL](https://github.com/MJDCuba/MyIntroCalculations/issues)
+-BugReports: https://github.com/MJDCuba/MyIntroCalculations/issues
 
 # License
 This package uses the MIT License, a permissive open-source license that allows reuse with minimal restriction.
