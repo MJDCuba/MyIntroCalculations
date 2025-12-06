@@ -40,12 +40,19 @@ vignette("MyIntroCalculations-demo")
 Functions Included:
 
 Category	          Functions
+
 Arithmetic	        add_num(), sub_num(), mult_num(), div_num()
+
 Summary statistics	calc_av(), sqr_num()
+
 Geometry	          dist_2d()
+
 Percent change	    perc_chg()
+
 Weighted mean	      wei_mn_calc()
+
 Finance	            simp_int(), cpond_int()
+
 Algebra	            solv_lin()
 
 Defensive Programming
